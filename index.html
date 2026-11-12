@@ -710,6 +710,172 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;
 .sec-step-label{font-family:'EB Garamond',serif;font-size:22px;font-weight:400;color:var(--ink);margin-bottom:14px;line-height:1.4;}
 
 .mt-opt-card::before{filter:url(#hand-draw);}
+
+/* BYTE DANCE — reuse the existing internship typography and spacing */
+.works-grid-internships{grid-template-columns:1fr;}
+.works-grid-internships .work-card{color:inherit;text-decoration:none;}
+.works-grid-internships .work-card-body{padding-right:58px;}
+.works-grid-internships .work-card:focus-visible,
+#page-bytedance a:focus-visible,#page-bytedance button:focus-visible{outline:2px solid var(--blue);outline-offset:4px;}
+.byte-cover{background:var(--tan-light);}
+.byte-cover-name{font-family:'EB Garamond',serif;font-size:36px;font-weight:400;line-height:1.2;color:var(--ink);text-align:center;}
+.byte-cover-caption{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.12em;color:var(--ink3);margin-top:8px;text-align:center;}
+.byte-sticky{position:absolute;top:16px;right:16px;background:var(--yellow);border-radius:4px;padding:8px 12px;font-family:'Space Mono',monospace;font-size:11px;color:var(--yellow-dark);transform:rotate(3deg);line-height:1.5;box-shadow:2px 3px 0 rgba(0,0,0,.07);pointer-events:none;}
+.byte-stamp{position:absolute;bottom:16px;left:16px;border:2px solid var(--blue);border-radius:30px;padding:4px 12px;font-size:11px;font-weight:700;letter-spacing:.12em;color:var(--blue);font-family:'Space Mono',monospace;transform:rotate(-3deg);opacity:.8;pointer-events:none;}
+#page-bytedance .detail-section-inner>div:last-child{min-width:0;}
+#page-bytedance .detail-quote{max-width:100%;}
+#page-bytedance .stat-panel{min-width:0;width:100%;}
+#page-bytedance .stat-sub-text{text-align:center;}
+#page-bytedance .stat-before-after{margin-top:18px;}
+.byte-metric-title{font-size:15px;font-weight:500;color:var(--ink);margin-top:24px;}
+.byte-metric-title:first-child{margin-top:0;}
+.byte-delta{font-family:'Space Mono',monospace;font-size:11px;white-space:nowrap;color:var(--green);margin-top:8px;}
+.byte-process{display:grid;grid-template-columns:1fr;gap:0;margin-top:20px;}
+.byte-process .pf-step{border:.5px solid var(--line);border-bottom:none;padding:20px 10px 16px;}
+.byte-process .pf-step:last-child{border-bottom:.5px solid var(--line);}
+.byte-process .pf-step-label{font-size:15px;}
+.byte-subheading{font-family:'EB Garamond',serif;font-size:22px;font-weight:400;color:var(--ink);margin:28px 0 14px;}
+.byte-note{font-family:'Space Mono',monospace;font-size:11px;color:var(--ink3);line-height:1.8;margin-top:14px;}
+.byte-next{background:var(--bg2);border-top:.5px solid var(--line);}
+.byte-next-inner{max-width:var(--max-w);margin:0 auto;padding:40px 20px 48px;}
+.byte-next-label{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--ink3);margin-bottom:20px;}
+.byte-next-card{display:flex;align-items:center;justify-content:space-between;gap:24px;width:100%;background:var(--bg);border:.5px solid var(--line);border-radius:12px;padding:24px 28px;cursor:pointer;text-align:left;text-decoration:none;box-shadow:0 2px 12px rgba(0,0,0,.06);transition:box-shadow .2s,transform .2s;}
+.byte-next-card:hover{box-shadow:0 6px 24px rgba(0,0,0,.12);transform:translateY(-2px);}
+.byte-next-card .work-sub{line-height:1.6;}
+.byte-next-arrow{font-size:22px;color:var(--tan);flex-shrink:0;font-family:'EB Garamond',serif;}
+@media(min-width:681px){
+  #page-bytedance .detail-quote{max-width:calc(100% - 180px);}
+  #page-bytedance .detail-title{white-space:nowrap;}
+  #page-bytedance .hero-sticker-r{right:32px;}
+  .byte-process{grid-template-columns:repeat(5,minmax(0,1fr));}
+  .byte-process .pf-step{border:.5px solid var(--line);border-right:none;}
+  .byte-process .pf-step:last-child{border-right:.5px solid var(--line);}
+  .byte-next-inner{padding-left:32px;padding-right:32px;}
+}
+@media(min-width:900px){
+  .works-grid-internships{grid-template-columns:repeat(3,minmax(0,1fr));}
+  .works-grid-internships .work-card-body{padding:24px 22px 28px;}
+  .works-grid-internships .work-sub{min-height:48px;padding-right:28px;}
+  .works-grid-internships .work-num{letter-spacing:.06em;}
+}
+/* Home hero — familiar palette, gentle reversible hover motion. */
+#page-home .hero-title-line{display:block;width:fit-content;max-width:100%;transform-origin:left center;transition:transform .22s cubic-bezier(.22,1,.36,1),color .18s ease;}
+#page-home .polaroid-frame{--photo-angle:-2.5deg;transform:rotate(var(--photo-angle));transition:transform .25s cubic-bezier(.22,1,.36,1),box-shadow .25s;}
+#page-home .polaroid-caption{transition:color .18s;}
+#page-home .hero-job-note{background:var(--yellow);border-radius:4px;padding:8px 12px;font-family:'Space Mono',monospace;font-size:11px;line-height:1.7;color:var(--yellow-dark);transform:rotate(-1.5deg);transform-origin:center;box-shadow:2px 3px 0 rgba(0,0,0,.07);transition:transform .22s cubic-bezier(.22,1,.36,1),background-color .18s,color .18s,box-shadow .22s;position:relative;z-index:12;}
+#page-home .hero-doodle{position:absolute;left:-65px;bottom:-6px;width:116px;height:85px;z-index:10;overflow:hidden;transform-origin:center;transition:transform .22s cubic-bezier(.22,1,.36,1);}
+#page-home .hero-doodle img{position:absolute;left:-535px;top:-342px;width:984px;height:auto;pointer-events:none;transition:opacity .18s;}
+#page-home .hero-doodle::after{content:'';position:absolute;inset:0;background:var(--blue);mask-image:url('./images/hand-dog.png');mask-size:984px auto;mask-position:-535px -342px;mask-repeat:no-repeat;-webkit-mask-image:url('./images/hand-dog.png');-webkit-mask-size:984px auto;-webkit-mask-position:-535px -342px;-webkit-mask-repeat:no-repeat;opacity:0;transition:opacity .18s;pointer-events:none;}
+@media(hover:hover) and (pointer:fine){
+  #page-home .hero-title-line:hover{transform:scale(1.025);color:var(--blue);}
+  #page-home .hero-title-line:nth-child(2):hover{color:#c85a72;}
+  #page-home .polaroid-frame:hover{transform:rotate(-.8deg) scale(1.045);box-shadow:0 12px 36px rgba(44,41,36,.22),0 3px 10px rgba(44,41,36,.1);}
+  #page-home .polaroid-frame:hover .polaroid-caption{color:var(--blue);}
+  #page-home .hero-job-note:hover{transform:rotate(1deg) scale(1.06);background:#f2c8cc;color:#7a3040;box-shadow:3px 5px 0 rgba(0,0,0,.07);}
+  #page-home .hero-doodle:hover{transform:scale(1.09) rotate(-2deg);}
+  #page-home .hero-doodle:hover img{opacity:0;}
+  #page-home .hero-doodle:hover::after{opacity:1;}
+}
+@media(max-width:680px){
+  #page-home .polaroid-frame{--photo-angle:-2deg;}
+  #page-home .hero-doodle{left:18px;bottom:-10px;width:48px;height:35px;}
+  #page-home .hero-doodle img{width:400px;left:-218px;top:-139px;}
+  #page-home .hero-doodle::after{mask-size:400px auto;mask-position:-218px -139px;-webkit-mask-size:400px auto;-webkit-mask-position:-218px -139px;}
+}
+@media(prefers-reduced-motion:reduce){
+  #page-home .hero-title-line,#page-home .polaroid-frame,#page-home .polaroid-caption,#page-home .hero-job-note,#page-home .hero-doodle,#page-home .hero-doodle img,#page-home .hero-doodle::after{transition:none;}
+  #page-home .hero-title-line:hover,#page-home .hero-doodle:hover{transform:none;}
+  #page-home .polaroid-frame:hover{transform:rotate(var(--photo-angle));}
+  #page-home .hero-job-note:hover{transform:rotate(-1.5deg);}
+}
+
+/* Playground — a quiet, image-led portfolio gallery. */
+#section-lab .pg-tabs-wrap{margin-top:0;}
+#section-lab .pg-tabs{gap:8px;margin:0 0 24px;align-items:stretch;overflow-x:auto;padding:2px;}
+#section-lab .pg-tab{flex:1;min-width:0;margin:0;padding:14px 12px;background:transparent;border:1px solid var(--line);border-radius:6px;gap:10px;transition:background .2s,border-color .2s,color .2s;}
+#section-lab .pg-tab.active{background:var(--bg2);border-color:var(--ink2);}
+#section-lab .pg-tab-num{font-size:11px;letter-spacing:.08em;}
+#section-lab .pg-tab-name{font:15px/1.5 -apple-system,'Helvetica Neue',sans-serif;}
+#section-lab .pg-room{border:0;border-radius:0;background:transparent;overflow:visible;}
+#section-lab .pg-room-inner{display:block;min-height:0;}
+#section-lab .pg-panel{display:none;}
+#section-lab .pg-panel.active{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;align-items:start;}
+#section-lab .pg-carousel{min-width:0;background:transparent;border:0;}
+#section-lab .pg-slides{padding:0;cursor:default;overflow:hidden;flex:none;}
+#section-lab .pg-track{display:block;transform:none!important;transition:none;}
+#section-lab .pg-slide{display:none;gap:12px;}
+#section-lab .pg-slide.active{display:flex;}
+.pg-image-open{display:flex;align-items:center;justify-content:center;width:100%;height:330px;padding:0;border:0;border-radius:6px;background:var(--bg2);overflow:hidden;cursor:zoom-in;}
+#section-lab .pg-slide-img{width:100%;height:100%;object-fit:contain;aspect-ratio:auto;border:0;border-radius:0;transition:transform .28s cubic-bezier(.22,1,.36,1);}
+#section-lab .pg-slide-cap{font:13px/1.6 -apple-system,'Helvetica Neue',sans-serif;color:var(--ink2);text-align:left;}
+#section-lab .pg-nav{padding:12px 0 0;border:0;background:transparent;gap:8px;}
+#section-lab .pg-nav-btn{min-height:44px;padding:8px 12px;font-size:12px;color:var(--ink2);}
+#section-lab .pg-dots{font:12px 'Space Mono',monospace;color:var(--ink3);}
+.pg-thumbnails{display:flex;gap:8px;overflow-x:auto;padding:12px 2px 4px;scrollbar-width:thin;}
+.pg-thumbnail{flex:0 0 66px;width:66px;height:54px;background:var(--bg2);border:1px solid var(--line);border-radius:3px;padding:3px;cursor:pointer;opacity:.65;transition:opacity .2s,border-color .2s;}
+.pg-thumbnail.active{border-color:var(--ink);opacity:1;}
+.pg-thumbnail img{width:100%;height:100%;object-fit:cover;display:block;}
+#section-lab .pg-detail{min-width:0;padding:0;gap:14px;}
+#section-lab .pg-detail-role{font:12px/1.5 -apple-system,'Helvetica Neue',sans-serif;letter-spacing:.02em;color:var(--ink2);}
+#section-lab .pg-detail-title{font:400 28px/1.35 'EB Garamond',serif;color:var(--ink);}
+#section-lab .pg-detail-body{font-size:15px;line-height:1.8;}
+#section-lab .pg-detail-works{gap:12px;}
+#section-lab .pg-work-item{display:block;}
+#section-lab .pg-work-title{display:block;font-size:16px;margin-bottom:3px;}
+#section-lab .pg-work-desc{font-size:14px;line-height:1.65;color:var(--ink2);}
+#section-lab .pg-detail-stat{margin-top:6px;padding-top:18px;}
+#section-lab .pg-detail-stat strong{font:400 24px/1.3 'EB Garamond',serif!important;color:var(--ink);}
+#section-lab .pg-tag{background:transparent;color:var(--ink2);border:1px solid var(--line);font-size:12px;padding:3px 9px;}
+.pg-lightbox{max-width:none;width:100vw;height:100dvh;max-height:none;inset:0;margin:0;padding:20px;border:0;background:rgba(24,23,21,.97);color:#fff;}
+.pg-lightbox::backdrop{background:rgba(24,23,21,.86);}
+.pg-lightbox-inner{display:flex;flex-direction:column;height:100%;max-width:1400px;margin:auto;gap:16px;}
+.pg-lightbox-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.pg-lightbox-button{border:1px solid rgba(255,255,255,.35);background:transparent;color:#fff;padding:10px 14px;min-height:44px;border-radius:4px;font:14px -apple-system,sans-serif;cursor:pointer;}
+.pg-lightbox-image{width:100%;height:100%;min-height:0;object-fit:contain;flex:1;}
+.pg-lightbox-caption{font:14px/1.6 -apple-system,sans-serif;text-align:center;color:#ddd;}
+.pg-lightbox-navigation{display:flex;justify-content:center;gap:12px;}
+#section-lab button:focus-visible,.pg-lightbox button:focus-visible{outline:2px solid var(--blue);outline-offset:3px;}
+@media(min-width:768px){
+  #section-lab .pg-panel.active{grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:32px;}
+  #section-lab .pg-detail{padding-top:4px;}
+  .pg-image-open{height:440px;}
+  #section-lab .pg-tab{padding:16px 18px;}
+}
+@media(hover:hover){.pg-image-open:hover .pg-slide-img{transform:scale(1.02);}.pg-thumbnail:hover{opacity:1;}}
+@media(prefers-reduced-motion:reduce){#section-lab .pg-slide-img,#section-lab .pg-tab,.pg-thumbnail{transition:none;} .pg-image-open:hover .pg-slide-img{transform:none;}}
+
+/* Shared internship motion: stable layout and restrained hover feedback. */
+:is(#page-bytedance,#page-meituan,#page-36kr) .stat-big-num{display:inline-block;font-variant-numeric:tabular-nums;white-space:nowrap;transform-origin:center;transition:transform .22s cubic-bezier(.22,1,.36,1);}
+:is(#page-bytedance,#page-meituan,#page-36kr) .mt-problem-num{transition:transform .22s cubic-bezier(.22,1,.36,1);}
+:is(#page-bytedance,#page-meituan,#page-36kr) .sec-body strong{display:inline-block;transform-origin:left center;transition:transform .22s cubic-bezier(.22,1,.36,1),color .22s;}
+:is(#page-bytedance,#page-meituan,#page-36kr) :is(.metric-tag,.result-sub,.byte-delta,.sd-title,.cat-card,.s-inline,.s-green-inline,.badge-repost,.kr-chart-mult,.kr-bar-val){transition:transform .22s cubic-bezier(.22,1,.36,1),box-shadow .22s;transform-origin:left center;}
+:is(#page-bytedance,#page-meituan,#page-36kr) .byte-delta{transform-origin:center;}
+#page-36kr .kr-bar-val{display:inline-block;font-variant-numeric:tabular-nums;white-space:nowrap;}
+#page-36kr .kr-bar-fill-h{transition:none;}
+.byte-motion-value{display:inline-block;}
+.byte-metric-motion{position:relative;}
+.byte-trend-track{width:100%;max-width:190px;height:3px;margin-top:14px;background:rgba(255,255,255,.15);border-radius:2px;overflow:hidden;}
+.byte-trend-fill{display:block;height:100%;background:var(--tan);transform:scaleX(1);transform-origin:left center;}
+.byte-metric-motion .stat-arrow-icon{display:inline-block;}
+.byte-metric-motion.is-animating .stat-arrow-icon{animation:byte-arrow-progress 1.4s cubic-bezier(.22,1,.36,1) both;}
+.byte-replay-row{display:flex;justify-content:flex-end;margin-top:10px;}
+.byte-replay{font:11px 'Space Mono',monospace;color:var(--ink2);border:.5px solid var(--line);background:var(--bg);border-radius:4px;padding:8px 12px;min-height:36px;cursor:pointer;transition:color .18s,border-color .18s,transform .18s;}
+.byte-replay:hover{color:var(--blue);border-color:var(--blue);}
+.byte-replay:focus-visible{outline:2px solid var(--blue);outline-offset:3px;}
+.byte-replay:active{transform:scale(.98);}
+@keyframes byte-arrow-progress{0%{transform:translateX(-4px);opacity:.45;}100%{transform:translateX(0);opacity:1;}}
+@media(hover:hover) and (pointer:fine){
+  :is(#page-bytedance,#page-meituan,#page-36kr) :is(.stat-big-num,.mt-problem-num,.kr-bar-val):hover{transform:scale(1.065);}
+  :is(#page-bytedance,#page-meituan,#page-36kr) .sec-body strong:hover{transform:scale(1.045);color:var(--blue);}
+  :is(#page-bytedance,#page-meituan,#page-36kr) :is(.metric-tag,.result-sub,.cat-card,.s-inline,.s-green-inline,.badge-repost):hover{transform:translateY(-2px) scale(1.025);box-shadow:0 4px 12px rgba(44,41,36,.07);}
+  :is(#page-bytedance,#page-meituan,#page-36kr) .sd-title:hover{transform:translateX(3px) scale(1.02);}
+  :is(#page-bytedance,#page-meituan,#page-36kr) :is(.byte-delta,.kr-chart-mult):hover{transform:scale(1.06);}
+}
+@media(prefers-reduced-motion:reduce){
+  .works-grid-internships .work-card,.byte-next-card{transition:none;}
+  :is(#page-bytedance,#page-meituan,#page-36kr) :is(.stat-big-num,.mt-problem-num,.sec-body strong,.metric-tag,.result-sub,.sd-title,.byte-delta,.byte-replay,.cat-card,.s-inline,.s-green-inline,.badge-repost,.kr-chart-mult,.kr-bar-val){transition:none;transform:none!important;}
+  .byte-metric-motion.is-animating .stat-arrow-icon{animation:none;}
+}
 </style>
 </head>
 <body>
@@ -734,10 +900,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;
     <div class="hero-inner">
       <div>
         <div class="hero-eyebrow">AI产品 · 运营 · 求职中</div>
-        <h1 class="hero-title">以设计为起点，<br>以AI为方向，<br>以产品为目标。</h1>
+        <h1 class="hero-title"><span class="hero-title-line">以设计为起点，</span><span class="hero-title-line">以AI为方向，</span><span class="hero-title-line">以产品为目标。</span></h1>
         <p class="hero-title-en">Designing with curiosity,<br>thinking in AI, aiming for product.</p>
         <div class="hero-bio">
-          <div class="bio-row"><div class="bio-dot"></div><span>实习经历：<strong>美团</strong> &amp; <strong>36Kr</strong></span></div>
+          <div class="bio-row"><div class="bio-dot"></div><span>实习经历：<strong>字节跳动</strong> · <strong>美团</strong> · <strong>36Kr</strong></span></div>
           <div class="bio-row"><div class="bio-dot"></div><span>持续关注AI产品动态，主动探索与应用新工具</span></div>
         </div>
 
@@ -751,9 +917,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;
           </div>
           <div class="polaroid-caption">DU XUEYING · 2026</div>
         </div>
-        <img src="./images/hand-dog.png" loading="lazy" style="position:absolute;left:-600px;bottom:-80px;width:984px;height:auto;pointer-events:none;z-index:10;">
+        <div class="hero-doodle" aria-hidden="true"><img src="./images/hand-dog.png" alt=""></div>
         <div class="hero-sticker-r" style="position:absolute;left:10px;bottom:60px;right:auto;top:auto;align-items:flex-start;">
-          <div style="background:var(--yellow);border-radius:4px;padding:8px 12px;font-family:'Space Mono',monospace;font-size:11px;line-height:1.7;color:var(--yellow-dark);transform:rotate(-1.5deg);box-shadow:2px 3px 0 rgba(0,0,0,.07);">AI产品实习<br>求职中</div>
+          <div class="hero-job-note">产品运营<br>校招中</div>
         </div>
       </div>
     </div>
@@ -766,7 +932,20 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;
         <div class="sec-divider"></div>
         <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.15em;color:var(--ink3);">2025 — 2026</span>
       </div>
-      <div class="works-grid">
+      <div class="works-grid works-grid-internships">
+        <a class="work-card" href="#bytedance" onclick="showPage('bytedance');return false;" aria-label="查看字节跳动智能策略运营实习经历">
+          <div class="work-card-img byte-cover">
+            <img src="images/bytedance-cover.jpg" alt="字节实习工牌与挂绳" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%;display:block;" loading="lazy">
+            <div class="byte-sticky">智能邀评率<br>2.29% → 41.32%</div>
+            <div class="byte-stamp" style="background:rgba(245,242,236,.92);opacity:1;">智能策略 · AI 提效</div>
+          </div>
+          <div class="work-card-body">
+            <div class="work-num">01 · 2026.06 — 2026.11</div>
+            <div class="work-title">字节跳动</div>
+            <div class="work-sub">智能策略运营实习</div>
+            <div class="work-arrow" aria-hidden="true">→</div>
+          </div>
+        </a>
         <div class="work-card" onclick="showPage('meituan')">
           <div class="work-card-img">
             <img src="meituan.jpg" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
@@ -774,7 +953,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;
             <div style="position:absolute;bottom:16px;left:16px;border:2px solid var(--red);border-radius:30px;padding:4px 12px;font-size:11px;font-weight:700;letter-spacing:.12em;color:var(--red);font-family:'Space Mono',monospace;transform:rotate(-3deg);opacity:.8;pointer-events:none;">Agent优化</div>
           </div>
           <div class="work-card-body">
-            <div class="work-num">01 · 2026.01 — 2026.05</div>
+            <div class="work-num">02 · 2026.01 — 2026.05</div>
             <div class="work-title">美团</div>
             <div class="work-sub">AI大模型平台运营实习</div>
             <div class="work-arrow">→</div>
@@ -787,7 +966,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;
             <div style="position:absolute;bottom:16px;right:16px;background:#e3f2e8;border-radius:4px;padding:5px 12px;font-size:11px;font-weight:500;color:var(--green);transform:rotate(2deg);pointer-events:none;">内容产品化</div>
           </div>
           <div class="work-card-body">
-            <div class="work-num">02 · 2025.07 — 2025.12</div>
+            <div class="work-num">03 · 2025.07 — 2025.12</div>
             <div class="work-title">36氪</div>
             <div class="work-sub">AI 资讯研究与产品运营实习</div>
             <div class="work-arrow">→</div>
@@ -920,15 +1099,15 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;
                     <div class="pg-slide-cap">《早春》· 概念草图</div>
                   </div>
                   <div class="pg-slide">
-                    <img src="./images/grass-spring.jpg" class="pg-slide-img" loading="lazy">
+                    <img src="./images/grass-spring.png" class="pg-slide-img" loading="lazy">
                     <div class="pg-slide-cap">《早春》· 春茶染纱，仿佛正在生长</div>
                   </div>
                   <div class="pg-slide">
-                    <img src="./images/grass-sunrise.jpg" class="pg-slide-img" loading="lazy">
+                    <img src="./images/grass-sunrise.png" class="pg-slide-img" loading="lazy">
                     <div class="pg-slide-cap">《朝阳》· 橙金纱布螺旋悬浮，如光焰穿云</div>
                   </div>
                   <div class="pg-slide">
-                    <img src="./images/grass-spring-water.jpg" class="pg-slide-img" loading="lazy">
+                    <img src="./images/grass-spring-water.png" class="pg-slide-img" loading="lazy">
                     <div class="pg-slide-cap">《圣泉》· 冰蓝渐变纱布垂落，月下饮碧雪</div>
                   </div>
                   </div>
@@ -1051,14 +1230,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;
             <h2 class="contact-h2">联系我</h2>
             <p class="contact-sub">寻找 AI 产品 / 运营方向的实习机会，欢迎聊聊。</p>
             <div class="contact-stickers">
-              <div style="background:var(--yellow);border-radius:4px;padding:6px 12px;font-family:'Space Mono',monospace;font-size:11px;color:var(--yellow-dark);transform:rotate(-1.5deg);">开放实习中</div>
+              <div style="background:var(--yellow);border-radius:4px;padding:6px 12px;font-family:'Space Mono',monospace;font-size:11px;color:var(--yellow-dark);transform:rotate(-1.5deg);">27应届生求职中</div>
               <div style="border:2px solid var(--green);border-radius:20px;padding:4px 12px;font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--green);font-family:'Space Mono',monospace;">YES · AVAILABLE</div>
             </div>
           </div>
           <div class="contact-links">
             <div class="contact-link"><span class="cl-label">微信</span><span>15533200709</span></div>
             <div class="contact-link"><span class="cl-label">邮箱</span><span>duxueyingdudu@163.com</span></div>
-            <div class="contact-link"><span class="cl-label">学校</span><span>上应大·设计硕士在读</span></div>
+            <div class="contact-link"><span class="cl-label">学校</span><span>上应大-设计硕士-27年6月毕业</span></div>
           </div>
         </div>
         <div class="footer-bar">
@@ -1068,6 +1247,157 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;
       </div>
     </div>
   </section>
+</div>
+
+<!-- BYTE DANCE -->
+<div id="page-bytedance" class="page">
+  <div class="detail-hero">
+    <div class="detail-hero-inner">
+      <button class="back-btn" onclick="showPage('home')"><span class="back-arrow">←</span> 返回首页</button>
+      <div class="detail-title">字节跳动<span class="detail-subtitle-small">· 番茄系产品</span></div>
+      <div class="detail-quote">负责番茄系产品的智能策略和体验运营，主导智能客服策略优化与效果评估，推进 AI 工具提效。<br>从业务问题定位、策略设计到上线验证，让智能服务与运营效率同步提升。</div>
+      <div class="meta-row">
+        <span class="meta-pill">智能策略运营实习生</span>
+        <span class="meta-pill">智能客服 · 体验运营 · AI Coding</span>
+        <span class="meta-date">2026.06 — 2026.11</span>
+      </div>
+      <div class="hero-sticker-r">
+        <div style="background:var(--yellow);border-radius:4px;padding:10px 14px;font-family:'Space Mono',monospace;font-size:11px;color:var(--yellow-dark);transform:rotate(2.5deg);line-height:1.6;box-shadow:2px 3px 0 rgba(0,0,0,.07);">智能邀评率<br>↑ 2.29% → 41.32%</div>
+        <div style="border:2px solid var(--green);border-radius:30px;padding:4px 14px;font-size:11px;font-weight:700;letter-spacing:.12em;color:var(--green);font-family:'Space Mono',monospace;transform:rotate(-4deg);margin-top:4px;">AI 提效 · 耗时 −75%</div>
+      </div>
+    </div>
+  </div>
+  <div class="detail-body">
+
+    <!-- 01 策略建设 -->
+    <div class="detail-section">
+      <div class="detail-section-inner">
+        <div class="sec-num"><div class="sec-num-circle">01</div></div>
+        <div>
+          <div class="sec-step-label">策略建设：0 到 1 搭建三条业务的智能客服</div>
+          <p class="sec-body">负责三条业务线的工作流搭建，以及各业务线标签场景下的知识库撰写；全场景升级 Harness 与模型，精细化构建 <strong>90+ 篇智能知识</strong>，作为智能客服的输入来源。</p>
+          <div class="metric-tags">
+            <span class="metric-tag">三条业务线</span><span class="metric-tag">工作流搭建</span><span class="metric-tag">知识库建设</span><span class="metric-tag">Harness 与模型升级</span>
+          </div>
+          <div class="byte-metric-title">平均转人工率</div>
+          <div class="stat-before-after">
+            <div class="stat-panel before"><div class="stat-label-small">优化前</div><div class="stat-big-num">63.27%</div><div class="stat-sub-text">平均转人工率</div></div>
+            <div class="stat-divider"><span class="stat-arrow-icon" aria-hidden="true">→</span><div class="byte-delta">−5.66pp</div></div>
+            <div class="stat-panel after"><div class="stat-label-small">优化后</div><div class="stat-big-num" data-byte-from="63.27" data-byte-to="57.61" data-byte-suffix="%" aria-label="优化后平均转人工率57.61%">57.61%</div><div class="stat-sub-text">减少转人工</div></div>
+          </div>
+          <div class="byte-metric-title">平均解决率</div>
+          <div class="stat-before-after">
+            <div class="stat-panel before"><div class="stat-label-small">优化前</div><div class="stat-big-num">7.69%</div><div class="stat-sub-text">平均解决率</div></div>
+            <div class="stat-divider"><span class="stat-arrow-icon" aria-hidden="true">→</span><div class="byte-delta">+23.98pp</div></div>
+            <div class="stat-panel after"><div class="stat-label-small">优化后</div><div class="stat-big-num" data-byte-from="7.69" data-byte-to="31.67" data-byte-suffix="%" aria-label="优化后平均解决率31.67%">31.67%</div><div class="stat-sub-text">平均解决率</div></div>
+          </div>
+          <p class="byte-note">pp 表示百分点，用于描述两个百分率之间的差值。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 02 体验分析 -->
+    <div class="detail-section">
+      <div class="detail-section-inner">
+        <div class="sec-num"><div class="sec-num-circle">02</div></div>
+        <div>
+          <div class="sec-step-label">体验分析：用数据定位邀评样本不足</div>
+          <p class="sec-body">对三条业务进行体验分析，结合客服邀评与参评数据，发现智能邀评率仅约 <strong>2.29%</strong>，难以稳定沉淀有效参评样本。样本不足影响智能服务数据的可信度，也影响智能解决率、智能满意度等季度 OKR 的目标制定。</p>
+          <div class="mt-problem-stat">
+            <div class="mt-problem-num">2.29%</div>
+            <div class="mt-problem-desc">智能邀评率过低<br>难以稳定沉淀有效参评样本</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 03 需求设计 -->
+    <div class="detail-section">
+      <div class="detail-section-inner">
+        <div class="sec-num"><div class="sec-num-circle">03</div></div>
+        <div>
+          <div class="sec-step-label">需求设计：梳理邀评链路 · 独立输出 BRD</div>
+          <p class="sec-body">整理分析邀评触发及参评转化逻辑，独立撰写 BRD，与产品讨论并确认三条业务线的优化方案；规划分业务实验验收，将 <strong>40% 邀评率</strong> 作为目标。</p>
+          <div class="strategy-dirs">
+            <div class="strategy-dir"><div class="sd-num">01</div><div class="sd-content"><div class="sd-title">退出确认弹窗</div><div class="sd-body">将退出确认纳入邀评触发链路，明确用户结束服务时的交互逻辑。</div></div></div>
+            <div class="strategy-dir"><div class="sd-num">02</div><div class="sd-content"><div class="sd-title">结束服务后的邀评判断</div><div class="sd-body">梳理结束服务后是否触发邀评的判断条件。</div></div></div>
+            <div class="strategy-dir"><div class="sd-num">03</div><div class="sd-content"><div class="sd-title">单会话频控与限制条件</div><div class="sd-body">明确单会话邀评频控及邀评限制，形成完整的策略需求。</div></div></div>
+          </div>
+          <div class="result-subs"><div class="result-sub">独立撰写 BRD</div><div class="result-sub">三条业务 · 分业务实验验收</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 04 上线验证 -->
+    <div class="detail-section">
+      <div class="detail-section-inner">
+        <div class="sec-num"><div class="sec-num-circle">04</div></div>
+        <div>
+          <div class="sec-step-label">结果验证：邀评率提升至 41.32%</div>
+          <p class="sec-body">正式上线后，智能邀评率由 <strong>2.29%</strong> 提升至 <strong>41.32%</strong>，增长 <strong>39.03 个百分点</strong>，达到 40% 的预期目标。完成三条业务的智能指标初步建设，从体验侧推动产品迭代。</p>
+          <div class="stat-before-after">
+            <div class="stat-panel before"><div class="stat-label-small">优化前</div><div class="stat-big-num">2.29%</div><div class="stat-sub-text">智能邀评率</div></div>
+            <div class="stat-divider"><span class="stat-arrow-icon" aria-hidden="true">→</span><div class="byte-delta">+39.03pp</div></div>
+            <div class="stat-panel after"><div class="stat-label-small">正式上线后</div><div class="stat-big-num" data-byte-from="2.29" data-byte-to="41.32" data-byte-suffix="%" aria-label="正式上线后智能邀评率41.32%">41.32%</div><div class="stat-sub-text">智能邀评率</div></div>
+          </div>
+          <div class="result-subs"><div class="result-sub">达到目标 · 邀评率 40%</div><div class="result-sub">三条业务 · 智能指标初步建设</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 05 AI 实践 -->
+    <div class="detail-section">
+      <div class="detail-section-inner">
+        <div class="sec-num"><div class="sec-num-circle">05</div></div>
+        <div>
+          <div class="sec-step-label">AI 工具实践：二线客服人力提效</div>
+          <p class="sec-body">梳理二线客服工作，针对人力无法覆盖的问题探索 AI 提效方案。建设二线 AI 工作空间，覆盖邮件发送、C 端 TTS 反馈打标签等场景，并建设 AI 问题研判、自动分类等能力，提升信息整理效率。</p>
+          <div class="byte-subheading">首个自动化场景：版权确权邮件发送</div>
+          <p class="sec-body">针对周均约 <strong>213 封</strong> 的版权确权邮件，借助 Aime 搭建固定 Skill 流程，将邮件整理、草稿生成与回填串联起来，同时把发送风险控制在人工可控范围内。</p>
+          <div class="byte-process" aria-label="邮件处理流程">
+            <div class="pf-step"><div class="pf-step-num">1</div><div class="pf-step-label">读表</div></div>
+            <div class="pf-step"><div class="pf-step-num">2</div><div class="pf-step-label">筛选</div></div>
+            <div class="pf-step"><div class="pf-step-num">3</div><div class="pf-step-label">写邮件</div></div>
+            <div class="pf-step"><div class="pf-step-num">4</div><div class="pf-step-label">起草稿</div></div>
+            <div class="pf-step"><div class="pf-step-num">5</div><div class="pf-step-label">回填</div></div>
+          </div>
+          <div class="byte-subheading">效果验证：单封邮件处理耗时降低 75%</div>
+          <div class="stat-before-after">
+            <div class="stat-panel before"><div class="stat-label-small">人工处理</div><div class="stat-big-num">1 min</div><div class="stat-sub-text">单封邮件 · 约</div></div>
+            <div class="stat-divider"><span class="stat-arrow-icon" aria-hidden="true">→</span><div class="byte-delta">耗时 −75%</div></div>
+            <div class="stat-panel after"><div class="stat-label-small">AI 辅助后</div><div class="stat-big-num" data-byte-from="1" data-byte-to="0.25" data-byte-suffix=" min" data-byte-format="trim" aria-label="AI辅助后单封邮件处理约0.25分钟">0.25 min</div><div class="stat-sub-text">单封邮件 · 约</div></div>
+          </div>
+          <div class="result-subs"><div class="result-sub">周均处理约 213 封</div><div class="result-sub">每周节省约 2.7 小时</div><div class="result-sub">复用到其他业务线</div></div>
+          <p class="byte-note">节省时间按每周约 213 封、单封节省约 0.75 分钟估算。简历估算每月节省约 10.7 小时，折合约 1.3 PD；AI 流程保留人工校验与发送风险控制。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 06 沉淀复盘 -->
+    <div class="detail-section">
+      <div class="detail-section-inner">
+        <div class="sec-num"><div class="sec-num-circle">06</div></div>
+        <div>
+          <div class="sec-step-label">沉淀复盘：让策略与提效回到业务价值</div>
+          <div class="mt-insight-quote">形成了从业务问题定位、策略设计到效果验证的工作思路。AI 提效不仅要关注效率，还需兼顾异常处理与人工校验；智能服务策略则需关注指标背后的业务价值，并通过实验持续验证效果。</div>
+          <div class="metric-tags"><span class="metric-tag">问题定位 → 策略设计 → 效果验证</span><span class="metric-tag">异常处理与人工校验</span><span class="metric-tag">实验持续验证</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="byte-next">
+    <div class="byte-next-inner">
+      <div class="byte-next-label">下一段实习经历</div>
+      <a class="byte-next-card" href="#meituan" onclick="showPage('meituan');return false;">
+        <div>
+          <div class="work-title">美团</div>
+          <div class="work-sub">AI 大模型平台运营实习</div>
+          <div class="metric-tags"><span class="metric-tag">Agent 优化</span><span class="metric-tag">召回率 48.6% → 97%</span></div>
+        </div>
+        <div class="byte-next-arrow" aria-hidden="true">→</div>
+      </a>
+    </div>
+  </div>
 </div>
 
 <!-- MEITUAN -->
@@ -1189,7 +1519,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;
             </div>
             <div class="stat-panel after">
               <div class="stat-label-small">优化后</div>
-              <div class="stat-big-num" id="count-recall">0%</div>
+              <div class="stat-big-num" id="count-recall" data-byte-from="48.6" data-byte-to="97" data-byte-suffix="%" data-byte-format="trim" aria-label="优化后Agent召回率97%">97%</div>
               <div class="stat-sub-text">Agent 召回率</div>
             </div>
           </div>
@@ -1387,7 +1717,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;
                   <div class="kr-bar-row-item">
                     <span class="kr-bar-row-label">累计</span>
                     <div class="kr-bar-track-h"><div class="kr-bar-fill-h after" data-w="100" style="background:linear-gradient(90deg, #e85a40 0%, rgba(232,90,64,0.2) 100%);"></div></div>
-                    <span class="kr-bar-val" style="color:#7a3040;font-weight:600;"><span id="count-wz1">0</span>+</span>
+                    <span class="kr-bar-val" style="color:#7a3040;font-weight:600;"><span id="count-wz1" data-byte-from="380" data-byte-to="30000" data-byte-format="integer" aria-label="累计阅读量30000以上">30,000</span>+</span>
                   </div>
                 </div>
                 <div class="kr-chart-tags"><span class="badge-repost">36氪 转载</span></div>
@@ -1407,7 +1737,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;
                   <div class="kr-bar-row-item">
                     <span class="kr-bar-row-label">累计</span>
                     <div class="kr-bar-track-h"><div class="kr-bar-fill-h after" data-w="97" style="background:linear-gradient(90deg, #e85a40 0%, rgba(232,90,64,0.2) 100%);"></div></div>
-                    <span class="kr-bar-val" style="color:#7a3040;font-weight:600;"><span id="count-wz2">0</span>+</span>
+                    <span class="kr-bar-val" style="color:#7a3040;font-weight:600;"><span id="count-wz2" data-byte-from="651" data-byte-to="29000" data-byte-format="integer" aria-label="累计阅读量29000以上">29,000</span>+</span>
                   </div>
                 </div>
                 <div class="kr-chart-tags"><span class="badge-repost">36氪 · 后浪 · PRO 转载</span></div>
@@ -1422,7 +1752,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;
                   <div class="kr-bar-row-item">
                     <span class="kr-bar-row-label">阅读</span>
                     <div class="kr-bar-track-h"><div class="kr-bar-fill-h single" data-w="40" style="background:linear-gradient(90deg, #e85a40 0%, rgba(232,90,64,0.2) 100%);"></div></div>
-                    <span class="kr-bar-val" style="color:#7a3040;font-weight:600;"><span id="count-wz3">0</span></span>
+                    <span class="kr-bar-val" style="color:#7a3040;font-weight:600;"><span id="count-wz3">12,000</span></span>
                   </div>
                 </div>
                 <div class="kr-chart-tags"><span class="badge-repost">直发36氪</span></div>
@@ -1491,19 +1821,28 @@ function closeNavMenu(){
   links.classList.remove('open');
 }
 function showPage(id){
-  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
   const el=document.getElementById('page-'+id);
-  if(el){el.classList.add('active');window.scrollTo({top:0,behavior:'instant'});}
-  if(id==='meituan'){setTimeout(()=>animateMeituan(),400);}
-  if(id==='36kr'){setTimeout(()=>animate36kr(),400);}
+  if(!el)return;
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  el.classList.add('active');
+  closeNavMenu();
+  window.scrollTo({top:0,behavior:'instant'});
+  if(location.hash!=='#'+id){history.replaceState(null,'','#'+id);}
+  if(window.internshipDetailMotion)window.internshipDetailMotion.onPageChange(id);
 }
+function openPageFromHash(){
+  const id=location.hash.slice(1);
+  if(['home','bytedance','meituan','36kr'].includes(id))showPage(id);
+}
+window.addEventListener('hashchange',openPageFromHash);
+openPageFromHash();
 function scrollToWorks(){setTimeout(()=>{document.getElementById('section-works')?.scrollIntoView({behavior:'smooth'})},50);}
 function scrollToLab(){setTimeout(()=>{document.getElementById('section-lab')?.scrollIntoView({behavior:'smooth'})},50);}
 function scrollToContact(){setTimeout(()=>{document.getElementById('section-contact')?.scrollIntoView({behavior:'smooth'})},50);}
 
 // trackpad: two-finger swipe right to go home
 (function(){
-  const PAGES = ['page-meituan', 'page-36kr'];
+  const PAGES = ['page-bytedance', 'page-meituan', 'page-36kr'];
   let lastWheelTime = 0;
   let accX = 0, accY = 0;
   let resetTimer = null;
@@ -1548,7 +1887,7 @@ function scrollToContact(){setTimeout(()=>{document.getElementById('section-cont
     const dy = cy - ty;
     if(dx > 60 && Math.abs(dy) < Math.abs(dx) * 0.6){
       const active = document.querySelector('.page.active');
-      if(active && (active.id === 'page-meituan' || active.id === 'page-36kr')){
+      if(active && ['page-bytedance','page-meituan','page-36kr'].includes(active.id)){
         showPage('home');
       }
     }
@@ -1556,44 +1895,100 @@ function scrollToContact(){setTimeout(()=>{document.getElementById('section-cont
   }, {passive:true});
 })();
 
-function countUp(id,to,duration,suffix,formatter){
-  const el=document.getElementById(id);if(!el)return;
-  const start=performance.now();
-  function step(now){
-    const p=Math.min((now-start)/duration,1);
-    const e=1-Math.pow(1-p,3);
-    const v=Math.round(to*e);
-    el.textContent=(formatter?formatter(v):v)+suffix;
-    if(p<1)requestAnimationFrame(step);
+// Shared detail animations use the factual baseline, never a made-up zero.
+(function initInternshipDetailMotion(){
+  const pages=['bytedance','meituan','36kr'].map(id=>document.getElementById('page-'+id)).filter(Boolean);
+  const preference=window.matchMedia('(prefers-reduced-motion: reduce)');
+  const states=[];
+  let observer=null;
+  const format=(state,value)=>{
+    if(state.integer)return Math.round(value).toLocaleString('en-US')+state.suffix;
+    const text=value.toFixed(2);
+    return (state.trim?String(Number(text)):text)+state.suffix;
+  };
+  function update(state,value){
+    state.value.textContent=format(state,value);
+    if(state.fill)state.fill.style.transform='scaleX('+(value/state.max)+')';
+    if(state.bar)state.bar.style.width=(value/state.to*state.barWidth)+'%';
   }
-  requestAnimationFrame(step);
-}
-
-function animateMeituan(){
-  countUp('count-recall',97,1400,'%');
-}
-
-function animate36kr(){
-  document.querySelectorAll('#page-36kr .kr-bar-fill-h').forEach(b=>{
-    b.style.width = b.dataset.w + '%';
-  });
-  countUp('count-wz1',30000,1400,'',v=>v.toLocaleString());
-  countUp('count-wz2',29000,1400,'',v=>v.toLocaleString());
-  countUp('count-wz3',12000,1200,'',v=>v.toLocaleString());
-}
-
-// scroll-triggered for detail sections
-const obs=new IntersectionObserver((entries)=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting){
-      const page=e.target.dataset.animate;
-      if(page==='meituan')animateMeituan();
-      if(page==='36kr')animate36kr();
-      obs.unobserve(e.target);
+  function finish(state){
+    if(state.frame)cancelAnimationFrame(state.frame);
+    if(state.tickTimer)clearTimeout(state.tickTimer);
+    if(state.watchdog)clearTimeout(state.watchdog);
+    state.frame=0;state.tickTimer=0;state.watchdog=0;
+    update(state,state.to);
+    state.card.classList.remove('is-animating');
+  }
+  function play(state){
+    if(!state.page.classList.contains('active'))return;
+    finish(state);state.played=true;
+    if(preference.matches)return;
+    const duration=1400,start=performance.now();
+    update(state,state.from);
+    state.card.classList.add('is-animating');
+    function tick(now){
+      if(!state.page.classList.contains('active')||preference.matches){finish(state);return;}
+      const progress=Math.min((now-start)/duration,1);
+      const eased=1-Math.pow(1-progress,3);
+      update(state,state.from+(state.to-state.from)*eased);
+      if(progress<1)scheduleTick();else finish(state);
     }
+    function scheduleTick(){
+      if(document.hidden)state.tickTimer=setTimeout(()=>tick(performance.now()),32);
+      else state.frame=requestAnimationFrame(tick);
+    }
+    scheduleTick();
+    state.watchdog=setTimeout(()=>finish(state),duration+200);
+  }
+  pages.forEach(page=>{
+    // Keep every chart informative without JavaScript or when animation is off.
+    page.querySelectorAll('.kr-bar-fill-h[data-w]').forEach(bar=>{bar.style.width=bar.dataset.w+'%';});
+    page.querySelectorAll('[data-byte-from]').forEach(value=>{
+      const chart=value.closest('.kr-chart-item');
+      const card=value.closest('.stat-before-after')||chart;
+      const from=Number(value.dataset.byteFrom),to=Number(value.dataset.byteTo);
+      if(!card||!Number.isFinite(from)||!Number.isFinite(to)||to<=0)return;
+      card.classList.add('byte-metric-motion');
+      let fill=null,bar=null,barWidth=100;
+      if(chart){bar=chart.querySelector('.kr-bar-fill-h.after');if(bar)barWidth=Number(bar.dataset.w)||100;}
+      else{
+        const track=document.createElement('div');track.className='byte-trend-track';track.setAttribute('aria-hidden','true');
+        fill=document.createElement('span');fill.className='byte-trend-fill';track.appendChild(fill);value.parentElement.appendChild(track);
+      }
+      const visibleValue=document.createElement('span');visibleValue.className='byte-motion-value';
+      visibleValue.textContent=value.textContent;value.replaceChildren(visibleValue);
+      const state={page,card,value:visibleValue,fill,bar,barWidth,from,to,max:Math.max(from,to,.01),suffix:value.dataset.byteSuffix||'',trim:value.dataset.byteFormat==='trim',integer:value.dataset.byteFormat==='integer',frame:0,played:false};
+      states.push(state);finish(state);
+      const row=document.createElement('div');row.className='byte-replay-row';
+      const button=document.createElement('button');button.type='button';button.className='byte-replay';button.textContent='重播数据变化';
+      button.addEventListener('click',()=>play(state));row.appendChild(button);card.after(row);
+    });
   });
-},{threshold:0.3});
-document.querySelectorAll('[data-animate]').forEach(el=>obs.observe(el));
+  function observe(){
+    if(observer)observer.disconnect();
+    if(!('IntersectionObserver' in window)||preference.matches){states.forEach(finish);return;}
+    observer=new IntersectionObserver(entries=>{
+      entries.forEach(entry=>{
+        if(!entry.isIntersecting)return;
+        const state=states.find(s=>s.card===entry.target);
+        if(state&&state.page.classList.contains('active')&&!state.played){play(state);observer.unobserve(state.card);}
+      });
+    },{threshold:.28});
+    states.forEach(state=>{if(state.page.classList.contains('active')&&!state.played)observer.observe(state.card);});
+  }
+  window.internshipDetailMotion={onPageChange(id){
+    if(observer)observer.disconnect();
+    states.forEach(state=>{finish(state);if(state.page.id==='page-'+id)state.played=false;});
+    observe();
+  }};
+  function preferenceChanged(){
+    if(preference.matches){if(observer)observer.disconnect();states.forEach(finish);}
+    else observe();
+  }
+  if(preference.addEventListener)preference.addEventListener('change',preferenceChanged);
+  else preference.addListener(preferenceChanged);
+  observe();
+})();
 
 // Remove black background from clip PNG images via canvas
 function removeBlackBg(img){
@@ -1623,87 +2018,81 @@ document.querySelectorAll('.pb-clip-img').forEach(img=>{
 });
 </script>
 
+<dialog class="pg-lightbox" id="pg-lightbox" aria-label="作品图片放大浏览">
+  <div class="pg-lightbox-inner">
+    <div class="pg-lightbox-toolbar"><span>作品细节</span><button type="button" class="pg-lightbox-button" id="pg-lightbox-close">关闭 ×</button></div>
+    <img class="pg-lightbox-image" id="pg-lightbox-image" alt="">
+    <div class="pg-lightbox-caption" id="pg-lightbox-caption"></div>
+    <div class="pg-lightbox-navigation"><button type="button" class="pg-lightbox-button" id="pg-lightbox-prev">← 上一张</button><button type="button" class="pg-lightbox-button" id="pg-lightbox-next">下一张 →</button></div>
+  </div>
+</dialog>
+
 <script>
 (function(){
-  var pgState={slides:[0,0,0],counts:[7,4,4]};
-  var pgTimers=[null,null,null];
-  var PG_INTERVAL=2000;
-
-  function pgUpdateCarousel(t){
-    var panel=document.getElementById('pg'+t);
-    if(!panel)return;
-    var track=panel.querySelector('.pg-track');
-    if(track)track.style.transform='translateX(-'+pgState.slides[t]+'00%)';
-    document.getElementById('pgdots'+t).querySelectorAll('.pg-dot-item').forEach(function(d,i){d.classList.toggle('on',i===pgState.slides[t]);});
+  const panels=[...document.querySelectorAll('.pg-panel')];
+  const tabs=[...document.querySelectorAll('.pg-tab')];
+  const positions=[0,0,0];
+  const dialog=document.getElementById('pg-lightbox');
+  const largeImage=document.getElementById('pg-lightbox-image');
+  const largeCaption=document.getElementById('pg-lightbox-caption');
+  let selectedProject=0,previousFocus=null;
+  const reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
+  // Show the outcome before its supporting process images.
+  const orders=[[4,6,5,2,3,0,1],[1,2,3,0],[1,2,0,3]];
+  panels.forEach((panel,index)=>{
+    const track=panel.querySelector('.pg-track');
+    const originals=[...track.querySelectorAll('.pg-slide')];
+    orders[index].forEach(i=>track.appendChild(originals[i]));
+    const thumbs=document.createElement('div');thumbs.className='pg-thumbnails';thumbs.setAttribute('aria-label','项目图片缩略图');
+    panel.querySelector('.pg-carousel').appendChild(thumbs);
+    [...track.querySelectorAll('.pg-slide')].forEach((slide,i)=>{
+      const img=slide.querySelector('img'),caption=slide.querySelector('.pg-slide-cap').textContent.trim();
+      img.alt=caption;
+      const opener=document.createElement('button');opener.type='button';opener.className='pg-image-open';opener.setAttribute('aria-label','放大查看：'+caption);
+      img.before(opener);opener.appendChild(img);opener.addEventListener('click',()=>openLightbox(index));
+      const thumbnail=document.createElement('button');thumbnail.type='button';thumbnail.className='pg-thumbnail';thumbnail.setAttribute('aria-label','查看第'+(i+1)+'张：'+caption);
+      const preview=img.cloneNode(false);preview.alt='';preview.loading='lazy';preview.removeAttribute('class');thumbnail.appendChild(preview);
+      thumbnail.addEventListener('click',()=>{positions[index]=i;update(index,true);});thumbs.appendChild(thumbnail);
+    });
+    update(index,false);
+  });
+  function slides(index){return [...panels[index].querySelectorAll('.pg-slide')];}
+  function update(index,animate){
+    const images=slides(index),position=positions[index];
+    images.forEach((slide,i)=>slide.classList.toggle('active',i===position));
+    panels[index].querySelectorAll('.pg-thumbnail').forEach((button,i)=>{button.classList.toggle('active',i===position);button.setAttribute('aria-pressed',String(i===position));});
+    panels[index].querySelector('.pg-dots').textContent=String(position+1).padStart(2,'0')+' / '+String(images.length).padStart(2,'0');
+    if(animate&&!document.hidden&&!reduced.matches&&images[position].animate){const fade=images[position].animate([{opacity:.45},{opacity:1}],{duration:220,easing:'ease-out'});setTimeout(()=>fade.cancel(),300);}
+    if(dialog.open)updateLightbox();
   }
-
-  function pgStartAuto(t){
-    pgStopAuto(t);
-    pgTimers[t]=setInterval(function(){
-      pgState.slides[t]=(pgState.slides[t]+1)%pgState.counts[t];
-      pgUpdateCarousel(t);
-    },PG_INTERVAL);
-  }
-
-  function pgStopAuto(t){
-    if(pgTimers[t]){clearInterval(pgTimers[t]);pgTimers[t]=null;}
-  }
-
-  // 给每个 panel 的轮播区绑定悬停暂停
-  function bindHover(t){
-    var carousel=document.querySelector('#pg'+t+' .pg-carousel');
-    if(!carousel)return;
-    carousel.addEventListener('mouseenter',function(){pgStopAuto(t);});
-    carousel.addEventListener('mouseleave',function(){pgStartAuto(t);});
-  }
-
-  window.pgSwitch=function(i){
-    document.querySelectorAll('.pg-tab').forEach(function(t,j){t.classList.toggle('active',i===j);});
-    document.querySelectorAll('.pg-panel').forEach(function(p,j){p.classList.toggle('active',i===j);});
-    // 切换 tab 时重启当前面板自动播放
-    [0,1,2].forEach(function(t){t===i?pgStartAuto(t):pgStopAuto(t);});
+  function step(index,direction){positions[index]=(positions[index]+direction+slides(index).length)%slides(index).length;update(index,true);}
+  window.pgNext=index=>step(index,1);window.pgPrev=index=>step(index,-1);
+  window.pgSwitch=index=>{
+    selectedProject=index;
+    tabs.forEach((tab,i)=>{tab.classList.toggle('active',i===index);tab.setAttribute('aria-selected',String(i===index));tab.tabIndex=i===index?0:-1;});
+    panels.forEach((panel,i)=>panel.classList.toggle('active',i===index));
+    update(index,true);
   };
-
-  window.pgNext=function(t){
-    pgState.slides[t]=(pgState.slides[t]+1)%pgState.counts[t];
-    pgUpdateCarousel(t);
-    pgStartAuto(t); // 手动点击后重置计时器
-  };
-  window.pgPrev=function(t){
-    pgState.slides[t]=(pgState.slides[t]-1+pgState.counts[t])%pgState.counts[t];
-    pgUpdateCarousel(t);
-    pgStartAuto(t);
-  };
-
-  // 点击图片左半边上一张，右半边下一张
-  document.querySelectorAll('.pg-slides').forEach(function(slides){
-    slides.addEventListener('click',function(e){
-      var panel=slides.closest('.pg-panel');
-      if(!panel)return;
-      var idx=Array.from(document.querySelectorAll('.pg-panel')).indexOf(panel);
-      if(idx===-1)return;
-      var rect=slides.getBoundingClientRect();
-      var clickX=e.clientX-rect.left;
-      if(clickX<rect.width/2){pgPrev(idx);}else{pgNext(idx);}
+  document.querySelector('.pg-tabs').setAttribute('role','tablist');
+  tabs.forEach((tab,index)=>{
+    tab.setAttribute('role','tab');tab.setAttribute('aria-controls','pg'+index);tab.id='pg-tab-'+index;tab.tabIndex=index===0?0:-1;tab.setAttribute('aria-selected',String(index===0));
+    panels[index].setAttribute('role','tabpanel');panels[index].setAttribute('aria-labelledby',tab.id);
+    tab.addEventListener('keydown',event=>{
+      if(event.key==='Enter'||event.key===' '){event.preventDefault();pgSwitch(index);}
+      if(event.key==='ArrowRight'||event.key==='ArrowLeft'){event.preventDefault();const next=(index+(event.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length;pgSwitch(next);tabs[next].focus();}
     });
   });
-
-  // 让圆点可点击
-  document.querySelectorAll('.pg-dots').forEach(function(dots,t){
-    dots.querySelectorAll('.pg-dot-item').forEach(function(dot,i){
-      dot.style.cursor='pointer';
-      dot.addEventListener('click',function(){
-        pgState.slides[t]=i;
-        pgUpdateCarousel(t);
-      });
-    });
-  });
-
-  // 页面加载后启动默认激活面板（pg0）的自动轮播
-  document.addEventListener('DOMContentLoaded',function(){
-    bindHover(0);bindHover(1);bindHover(2);
-    pgStartAuto(0);
-  });
+  function updateLightbox(){
+    const slide=slides(selectedProject)[positions[selectedProject]],img=slide.querySelector('img');
+    largeImage.src=img.src;largeImage.alt=img.alt;
+    largeCaption.textContent=slide.querySelector('.pg-slide-cap').textContent+' · '+(positions[selectedProject]+1)+' / '+slides(selectedProject).length;
+  }
+  function openLightbox(index){selectedProject=index;previousFocus=document.activeElement;updateLightbox();dialog.showModal();}
+  document.getElementById('pg-lightbox-close').addEventListener('click',()=>dialog.close());
+  document.getElementById('pg-lightbox-prev').addEventListener('click',()=>step(selectedProject,-1));
+  document.getElementById('pg-lightbox-next').addEventListener('click',()=>step(selectedProject,1));
+  dialog.addEventListener('keydown',event=>{if(event.key==='ArrowRight'){event.preventDefault();step(selectedProject,1);}if(event.key==='ArrowLeft'){event.preventDefault();step(selectedProject,-1);}});
+  dialog.addEventListener('close',()=>{largeImage.removeAttribute('src');if(previousFocus)previousFocus.focus();});
 })();
 </script>
 <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
